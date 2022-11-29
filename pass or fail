@@ -1,0 +1,17 @@
+name = input("Enter student name: ")
+s1 = int(input("Enter s1 marks: "))
+s2 = int(input("Enter s2 marls: "))
+s3 = int(input("Enter s3 marks: "))
+
+if s1>=35 and s2>=35 and s3 >=35 :
+    print("Pass !")
+else :
+    print("Fail")
+    
+OUTPUT:
+
+Enter student name: Joy
+Enter s1 marks: 34
+Enter s2 marls: 64
+Enter s3 marks: 74
+Fail
