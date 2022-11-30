@@ -1,0 +1,49 @@
+sugar = 20
+flour = 30
+nuts = 50
+masala = 20
+powder = 40
+cphno = int(input("Enter phone number: "))
+cname = input("Enter name: ")
+caddr = input("Enter address: ")
+nos = int(input("Enter number of sugar packets you want: "))
+nof = int(input("Enter number of flour packets you want: "))
+non = int(input("Enter number of nuts packets you want: "))
+nom = int(input("Enter number of masala packets you want: "))
+nop = int(input("Enter number of powder bottles you want: "))
+
+bill = (sugar*nos) + (flour*nof) + (nuts*non) + (masala*nom) + (powder*nop)
+
+if bill > 3000 :
+    tax = bill*5/100
+elif bill > 2000 :
+    tax = bill*7/100
+elif bill > 1000 :
+    tax = bill*10/100
+elif bill > 500 :
+    tax = bill*15/100 
+else :
+    tax = 100 
+tot = tax + bill  
+
+print("Name: ",cname)
+print("Phone number: ",cphno)
+print("Tax = ",tax)
+print("Bill = ",bill)
+print("Total amount = ",tot)
+
+OUTPUT: 
+
+Enter phone number: 1234567890
+Enter name: Joyce
+Enter address: Kakinada
+Enter number of sugar packets you want: 5
+Enter number of flour packets you want: 8
+Enter number of nuts packets you want: 4
+Enter number of masala packets you want: 10
+Enter number of powder bottles you want: 3
+Name:  Joyce
+Phone number:  1234567890
+Tax =  129.0
+Bill =  860
+Total amount =  989.0
