@@ -1,0 +1,80 @@
+sugar = 20
+flour = 30
+nuts = 50
+masala = 20
+powder = 40
+cphno = int(input("Enter phone number: "))
+cname = input("Enter name: ")
+caddr = input("Enter address: ")
+nos = int(input("Enter number of sugar packets you want: "))
+nof = int(input("Enter number of flour packets you want: "))
+non = int(input("Enter number of nuts packets you want: "))
+nom = int(input("Enter number of masala packets you want: "))
+nop = int(input("Enter number of powder bottles you want: "))
+
+bill = (sugar*nos) + (flour*nof) + (nuts*non) + (masala*nom) + (powder*nop)
+
+if bill > 3000 :
+    tax = bill*5/100
+elif bill > 2000 :
+    tax = bill*7/100
+elif bill > 1000 :
+    tax = bill*10/100
+elif bill > 500 :
+    tax = bill*15/100 
+else :
+    tax = 100 
+    
+bill = tax + bill  
+
+
+
+cc =input("Enter COUPON CODE in Capital letters: ")
+
+if cc=='DIWALI' and bill>=5000 :
+    dis = bill*10/100 
+elif cc=='DIWALI' and bill>=3000 :
+    dis = bill*6/100
+elif cc=='DIWALI' and bill>=1000 :
+    dis = bill*4/100
+else :
+    dis = 0 
+    
+if cc=='CHRISTMAS' and bill>=3000 :
+    dis = bill*20/100
+elif cc=='CHRISTMAS' and bill>=2000 :
+    dis = bill*10/100
+elif cc=='CHRISTMAS' and bill>=1000 :
+    dis = bill*5/100 
+else :
+    dis = 0 
+    
+print("Name: ",cname)
+print("Phone number: ",cphno)
+print("Address: ",caddr)
+print("Tax = ",tax)
+print("Discount: ",dis)
+print("Bill = ",bill)
+
+tot = bill - dis 
+
+print("Total amount = ",tot)
+
+OUTPUT:
+
+Enter phone number: 1234567890
+Enter name: joy
+Enter address: kkd
+Enter number of sugar packets you want: 20
+Enter number of flour packets you want: 30
+Enter number of nuts packets you want: 15
+Enter number of masala packets you want: 25
+Enter number of powder bottles you want: 10
+Enter COUPON CODE in Capital letters: CHRISTMAS
+Name:  joy
+Phone number:  1234567890
+Address:  kkd
+Tax =  206.5
+Discount:  631.3
+Bill =  3156.5
+Total amount =  2525.2
