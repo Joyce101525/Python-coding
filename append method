@@ -1,0 +1,16 @@
+ap = []
+n = int(input("Enter number of districts: "))
+
+for i in range(n) :
+    x = input()
+    ap.append(x)
+    
+print(ap)
+
+OUTPUT : 
+Enter number of districts: 4
+Kakinada
+Visakhapatnam
+Amalapuram
+Srikakulam
+['Kakinada', 'Visakhapatnam', 'Amalapuram', 'Srikakulam']
