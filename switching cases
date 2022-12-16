@@ -1,0 +1,16 @@
+str = input("Enter a string: ")
+n = len(str)
+x = str.upper()
+y = str.lower()
+z = str.swapcase()
+print(n)
+print(x)
+print(y)
+print(z)
+
+OUTPUT:
+Enter a string: AdItYa
+6
+ADITYA
+aditya
+aDiTyA
