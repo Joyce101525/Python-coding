@@ -1,0 +1,30 @@
+l = []
+n = int(input())
+l = list(map(int,input().split()))
+for i in range(0,n,1) :
+    x = int(input())
+    l.append(x)
+evenl = []
+oddl = []
+for i in range(0,n+1) :
+    if l[i] %2 == 0 :
+        evenl.append(l[i])
+    else :
+        oddl.append(l[i])
+        
+print(evenl)
+print(oddl)
+
+evenl.extend(oddl)
+
+print(evenl)
+
+OUTPUT:
+3
+6
+1
+7
+4
+[6, 4]
+[1, 7]
+[6, 4, 1, 7]
